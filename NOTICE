@@ -1,0 +1,34 @@
+Quillwild
+Copyright (c) 2026 Christopher Mueller. All rights reserved.
+
+Third-party files shipped with the game
+=======================================
+
+1. Literata (assets/fonts/literata-regular.woff, literata-bold.woff)
+   Copyright 2017 The Literata Project Authors
+   (https://github.com/googlefonts/literata)
+   License: SIL Open Font License 1.1 - assets/fonts/OFL-Literata.txt
+   Changes: static instances (opsz 12, wght 400 and 700) made from the
+   variable font, subset to Latin characters, converted to WOFF.
+   Source: https://github.com/google/fonts/tree/main/ofl/literata
+
+2. IM Fell English (assets/fonts/imfell-regular.woff)
+   Copyright (c) 2010, Igino Marini (mail@iginomarini.com)
+   License: SIL Open Font License 1.1 - assets/fonts/OFL-IMFellEnglish.txt
+   Changes: subset to Latin characters, converted to WOFF.
+   Source: https://github.com/google/fonts/tree/main/ofl/imfellenglish
+   The letters of the "Quillwild" lettering in the logo files
+   (assets/logo/*.svg) are outlines of this font. Everything else in the
+   logos (quill, trees, mountains, vines, seal) is drawn by the project.
+
+Development tools (not shipped, only in package.json devDependencies)
+=====================================================================
+
+- terser (BSD-2-Clause) - minifies JavaScript for tools/build-play
+- acorn (MIT) - checks in tests/ that the JavaScript is ES2015
+- their dependencies: @jridgewell/* (MIT), buffer-from (MIT),
+  commander (MIT), source-map (BSD-3-Clause), source-map-support (MIT)
+- fontTools (MIT), Python, only for tools/wordmark.py and
+  tools/make-logos.py
+- Playwright and Chromium (Apache-2.0 / BSD), pre-installed, only for
+  the browser tests and screenshots
