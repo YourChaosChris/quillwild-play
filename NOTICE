@@ -26,6 +26,8 @@ Development tools (not shipped, only in package.json devDependencies)
 
 - terser (BSD-2-Clause) - minifies JavaScript for tools/build-play
 - acorn (MIT) - checks in tests/ that the JavaScript is ES2015
+- jsQR (Apache-2.0) - reads the game's own QR codes back in tests/, to
+  check them with a decoder that was not written for this game
 - their dependencies: @jridgewell/* (MIT), buffer-from (MIT),
   commander (MIT), source-map (BSD-3-Clause), source-map-support (MIT)
 - fontTools (MIT), Python, only for tools/wordmark.py and
