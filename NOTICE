@@ -21,6 +21,23 @@ Third-party files shipped with the game
    (assets/logo/*.svg) are outlines of this font. Everything else in the
    logos (quill, trees, mountains, vines, seal) is drawn by the project.
 
+3. QR Code generator library (Project Nayuki)
+   Copyright (c) Project Nayuki. (MIT License)
+   License: MIT - assets/licenses/MIT-qrcodegen.txt
+   Changes: rewritten in ES5, reduced to alphanumeric mode, level M,
+   versions 1 to 10; used in core/qr.js (Reed-Solomon, function patterns,
+   format bits and module placement follow the library).
+   Source: https://github.com/nayuki/QR-Code-generator
+   (typescript-javascript/qrcodegen.ts),
+   https://www.nayuki.io/page/qr-code-generator-library
+
+Algorithms (no third-party code copied)
+=======================================
+
+core/rng.js uses the public-domain algorithms sfc32 (Chris Doty-Humphrey,
+PractRand), splitmix32 and the MurmurHash3 mixing steps (Austin Appleby),
+written out in the project's own code. core/seal.js uses a CRC-15 check.
+
 Development tools (not shipped, only in package.json devDependencies)
 =====================================================================
 
